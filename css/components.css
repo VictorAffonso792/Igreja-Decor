@@ -1,0 +1,45 @@
+/* ===== COMPONENTES ===== */
+
+/* WhatsApp flutuante */
+.whats-float{
+  position:fixed;bottom:26px;right:26px;z-index:80;
+  width:58px;height:58px;border-radius:50%;background:#25D366;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 8px 26px rgba(37,211,102,.45);transition:transform .25s;
+}
+.whats-float:hover{transform:scale(1.1)}
+.whats-float svg{width:30px;height:30px;fill:#fff}
+
+/* Toast */
+.toast{
+  position:fixed;top:90px;left:50%;transform:translateX(-50%) translateY(-20px);
+  background:var(--oliva);color:var(--creme);padding:13px 28px;border-radius:999px;
+  font-size:14px;z-index:110;opacity:0;pointer-events:none;transition:all .35s;
+  box-shadow:var(--shadow-lg);max-width:90vw;text-align:center;
+}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* Lightbox */
+.lightbox{
+  position:fixed;inset:0;background:rgba(46,42,36,.92);z-index:105;
+  display:none;align-items:center;justify-content:center;padding:30px;
+}
+.lightbox.aberto{display:flex}
+.lightbox img{max-width:90vw;max-height:84vh;border-radius:14px;box-shadow:var(--shadow-lg)}
+.lightbox-fechar{
+  position:absolute;top:24px;right:28px;background:none;border:none;
+  color:var(--creme);font-size:38px;line-height:1;
+}
+.lightbox-legenda{
+  position:absolute;bottom:28px;left:50%;transform:translateX(-50%);
+  color:var(--creme);font-family:var(--font-display);font-size:18px;text-align:center;
+}
+
+/* Reveal ao scroll */
+.reveal{opacity:0;transform:translateY(34px);transition:opacity .8s ease,transform .8s ease}
+.reveal.visivel{opacity:1;transform:translateY(0)}
+@media (prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  html{scroll-behavior:auto}
+  .hero-badge{animation:none}
+}

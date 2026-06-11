@@ -1,0 +1,16 @@
+/* ===== SERVIÇOS ===== */
+.servicos{background:var(--branco)}
+.serv-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.serv-card{
+  background:var(--creme);border-radius:var(--radius);padding:34px 26px;
+  transition:transform .3s,box-shadow .3s;border:1px solid rgba(69,79,59,.07);
+}
+.serv-card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.serv-icon{
+  width:54px;height:54px;border-radius:50%;background:var(--rose-claro);
+  display:flex;align-items:center;justify-content:center;margin-bottom:20px;
+  color:var(--oliva);
+}
+.serv-icon svg{width:26px;height:26px}
+.serv-card h3{font-size:19px;color:var(--oliva);margin-bottom:10px}
+.serv-card p{font-size:14px;color:var(--tinta-suave)}

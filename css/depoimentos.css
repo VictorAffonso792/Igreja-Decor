@@ -1,0 +1,14 @@
+/* ===== DEPOIMENTOS ===== */
+.depo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.depo-card{
+  background:var(--branco);border-radius:var(--radius);padding:32px 28px;
+  box-shadow:var(--shadow);position:relative;
+}
+.depo-card::before{
+  content:'"';font-family:var(--font-display);font-size:70px;color:var(--rose-claro);
+  position:absolute;top:8px;left:20px;line-height:1;
+}
+.depo-card p{color:var(--tinta-suave);font-size:15px;font-style:italic;margin:24px 0 20px}
+.depo-card strong{color:var(--oliva);font-size:15px;display:block}
+.depo-card span{font-size:12px;color:var(--tinta-suave)}
+.estrelas{color:var(--rose);font-size:14px;letter-spacing:3px;margin-top:6px}

@@ -1,0 +1,14 @@
+/* ===== CONTATO / CTA ===== */
+.contato{
+  background:var(--oliva);color:var(--creme);text-align:center;
+  border-radius:40px;margin:0 24px;padding:90px 24px;position:relative;overflow:hidden;
+}
+.contato h2{color:var(--creme);margin-bottom:16px}
+.contato p{color:rgba(250,246,240,.8);max-width:440px;margin:0 auto 36px}
+.contato .btn-primary{background:var(--creme);color:var(--oliva)}
+.contato .btn-primary:hover{background:var(--rose-claro)}
+.contato .btn-ghost{border-color:rgba(250,246,240,.5);color:var(--creme)}
+.contato .btn-ghost:hover{background:rgba(250,246,240,.12);color:var(--creme)}
+.contato-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.contato .branch{color:var(--sage-claro);opacity:.25}
+.contato .eyebrow{color:var(--rose-claro)}

@@ -1,0 +1,9 @@
+/* ===== RODAPÉ ===== */
+.footer{padding:50px 24px 36px;text-align:center;color:var(--tinta-suave);font-size:13px}
+.footer .brand{justify-content:center;margin-bottom:14px;display:flex}
+.footer-admin{
+  margin-top:18px;display:inline-flex;align-items:center;gap:6px;
+  font-size:12px;color:var(--tinta-suave);opacity:.7;background:none;border:none;
+  border-bottom:1px dotted var(--tinta-suave);padding-bottom:2px;
+}
+.footer-admin:hover{opacity:1;color:var(--oliva)}

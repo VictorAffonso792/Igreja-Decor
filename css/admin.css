@@ -1,0 +1,50 @@
+/* ===== PAINEL ADMIN ===== */
+.admin-bar{
+  position:fixed;bottom:0;left:0;right:0;z-index:85;
+  background:var(--oliva);color:var(--creme);padding:14px 24px;
+  display:none;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;
+  box-shadow:0 -8px 30px rgba(46,42,36,.2);
+}
+body.admin .admin-bar{display:flex}
+.admin-bar strong{font-size:14px}
+.admin-btn{
+  padding:9px 20px;border-radius:999px;border:none;font-size:13px;font-weight:600;
+  background:var(--creme);color:var(--oliva);display:inline-flex;align-items:center;gap:8px;
+  font-family:var(--font-body);
+}
+.admin-btn:hover{background:var(--rose-claro)}
+.admin-btn.sair{background:transparent;color:var(--creme);border:1.5px solid rgba(250,246,240,.5)}
+
+/* Modais */
+.modal-bg{
+  position:fixed;inset:0;background:rgba(46,42,36,.6);z-index:100;
+  display:none;align-items:center;justify-content:center;padding:24px;
+}
+.modal-bg.aberto{display:flex}
+.modal{
+  background:var(--branco);border-radius:20px;padding:38px 34px;
+  max-width:430px;width:100%;box-shadow:var(--shadow-lg);
+  max-height:90vh;overflow-y:auto;
+}
+.modal h3{font-size:24px;color:var(--oliva);margin-bottom:8px}
+.modal .sub{font-size:14px;color:var(--tinta-suave);margin-bottom:24px}
+.modal label{font-size:13px;font-weight:600;color:var(--oliva);display:block;margin:16px 0 6px}
+.modal input[type=password],.modal input[type=text],.modal select{
+  width:100%;padding:12px 16px;border-radius:10px;border:1.5px solid rgba(69,79,59,.25);
+  font-family:var(--font-body);font-size:15px;background:var(--creme);color:var(--tinta);
+}
+.modal input:focus,.modal select:focus{outline:none;border-color:var(--sage)}
+.modal .erro{color:#A3322E;font-size:13px;margin-top:10px;display:none}
+.modal-actions{display:flex;gap:12px;margin-top:26px}
+.modal-actions .btn{flex:1;justify-content:center;padding:12px}
+
+/* Drop zone */
+.drop-zone{
+  margin-top:8px;border:2px dashed rgba(69,79,59,.3);border-radius:12px;
+  padding:30px 20px;text-align:center;color:var(--tinta-suave);font-size:14px;
+  cursor:pointer;transition:border-color .25s,background .25s;
+}
+.drop-zone:hover,.drop-zone.over,.drop-zone:focus-visible{border-color:var(--sage);background:var(--creme);outline:none}
+.drop-zone svg{width:34px;height:34px;color:var(--sage);margin-bottom:8px}
+.preview-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:14px}
+.preview-grid img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px}

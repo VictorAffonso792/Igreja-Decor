@@ -1,0 +1,28 @@
+/* ===== NAVBAR ===== */
+.nav{
+  position:fixed;top:0;left:0;right:0;z-index:90;
+  background:rgba(250,246,240,.92);backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(69,79,59,.08);
+  transition:box-shadow .3s;
+}
+.nav.scrolled{box-shadow:0 4px 24px rgba(46,42,36,.07)}
+.nav-inner{
+  max-width:1100px;margin:0 auto;padding:16px 24px;
+  display:flex;align-items:center;justify-content:space-between;
+}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--font-display);font-size:21px;color:var(--oliva)}
+.brand svg{width:28px;height:28px}
+.nav-links{display:flex;gap:34px;align-items:center}
+.nav-links a{font-size:14px;font-weight:500;color:var(--tinta-suave);transition:color .2s;position:relative}
+.nav-links a::after{
+  content:'';position:absolute;left:0;bottom:-5px;width:0;height:2px;
+  background:var(--rose);transition:width .25s;border-radius:2px;
+}
+.nav-links a:hover{color:var(--oliva)}
+.nav-links a:hover::after{width:100%}
+.nav-cta{background:var(--oliva);color:var(--creme)!important;padding:9px 22px;border-radius:999px;font-size:13px}
+.nav-cta::after{display:none}
+.nav-cta:hover{background:var(--sage)}
+.hamburger{display:none;background:none;border:none;flex-direction:column;gap:5px;padding:6px}
+.hamburger span{width:24px;height:2px;background:var(--oliva);border-radius:2px;transition:.3s}
